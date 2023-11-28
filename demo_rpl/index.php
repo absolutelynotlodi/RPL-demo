@@ -28,6 +28,14 @@ include_once 'entity/book.php';
                 $bookController = new BookController();
                 $bookController->index();
                 break;
+            case 'book-create':
+                $bookController = new BookController();
+                $bookController->create();
+                break;
+            case 'book-store':
+                $bookController = new BookController();
+                $bookController->store();
+                break;
             default:
         }
         ?>

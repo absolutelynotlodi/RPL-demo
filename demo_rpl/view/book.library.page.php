@@ -1,3 +1,13 @@
+<?php
+$message = filter_input(INPUT_GET, 'msg');
+if (!empty($message))
+{
+    echo '<div>' . $message . '</div>';
+}
+?>
+<div>
+    <a href="?menu=book-create" role="button">Add Book</a>
+</div>
 <table>
     <thead>
         <tr>
